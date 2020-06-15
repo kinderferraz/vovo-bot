@@ -1,0 +1,10 @@
+# node.js files
+node_modules/
+session.data.json
+
+# emacs files
+\#*
+*~
+
+# macOS files
+.DS_Store
