@@ -12,12 +12,13 @@
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^8.10.2",
-    "ts-node-dev": "^1.0.0-pre.44",
+    "ts-node-dev": "^1.0.0-pre.48",
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@open-wa/wa-automate": "^1.9.67",
+    "@open-wa/wa-automate": "^1.9.73",
     "jimp": "^0.13.0",
+    "moment": "^2.26.0",
     "p-queue": "^6.4.0"
   }
 }
