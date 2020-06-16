@@ -31,17 +31,7 @@ const main = async () => {
 	const client = await create();
 	const people = await targets(client, [
 		/* Insert contact names here  */
-		// "Yasmim Linda",
-		"Ian Fernandes",
-		// "fofuthom ✨",
-		// "Familia",
-		// "Empreendedor",
-		// "Mãe",
-		// "Pai",
-		// "Rodrigo Cruz",
-		// "Jonas [Fam]",
-		// "Nana",
-		// "Raphael Pavan"
+
 	]);
 
 	await sendMessages(client, people);
