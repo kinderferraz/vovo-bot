@@ -11,15 +11,20 @@ const targets = async (client: wa.Client, people: string[]) => {
 
 const sendMessages = async (client: wa.Client, people: wa.Contact[]) => {
 	const image = await getImage();
-	people.forEach(async person => {
-		await client.sendFile(
+	const logs = people.map(async person => {
+		const timestamp = moment().format();
+		const id = await client.sendFile(
 			String(person.id),
 			image,
-			moment().format(),
-			'testando bot'
+			timestamp,
+			'testando bot + timestamp',
+			undefined,
+			true
 		);
 		console.log('sent ' + person.formattedName);
+		return { id, timestamp };
 	});
+	return logs;
 }
 
 const main = async () => {
