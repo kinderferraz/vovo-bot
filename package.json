@@ -18,7 +18,7 @@
   "dependencies": {
     "@open-wa/wa-automate": "^1.9.74",
     "jimp": "^0.13.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "p-queue": "^6.4.0"
   }
 }
